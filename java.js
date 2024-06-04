@@ -6,11 +6,11 @@ let gender;
 while(true){
     gender=prompt("Please enter your gender");
     if(gender=="male"){
-        alert("welcome Mr" + gender);
+        alert("welcome Mr" + user_name);
         break;
 
     }else if(gender=="female"){
-        alert("welcome Ms" + gender);
+        alert("welcome Ms" + user_name);
         break;
 
     }
