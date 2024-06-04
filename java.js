@@ -2,19 +2,28 @@ let user_name = prompt("please enter your name ");
 if(user_name ==null ||user_name == undefined ){
     user_name =" ";
 }
-let user_gender = prompt("Enter your Gender");
+let gender;
+while(true){
+    gender=prompt("Please enter your gender");
+    if(gender=="male"){
+        alert("welcome Mr" + gender);
+        break;
 
-if(user_gender=="meal"){
-    alert ("welcom Mr " +  user_name);
+    }else if(gender=="female"){
+        alert("welcome Ms" + gender);
+        break;
 
-}else if(user_gender=="female"){
-    alert ("welcom Ms " +  user_name);
+    }
+    else{
+        alert("please enter meal or female ");
+    }
+  }
 
-
-}else{
-    alert("welcom" + user_name);
-
-}
 let order = prompt("what do you want Donat Coffee or Ice cream or Bakery ",["Bakery"]);
-// alert("Enter name your order ");
+let ordername= prompt("Enter name your order ",["Ice coffee"]);
 console.log(user_name + order);
+
+const cusomer=[user_name,gender,order,ordername];
+for( let i = 0 ; i < cusomer.length;i++ )  {
+    console.log(cusomer[i]);
+}
