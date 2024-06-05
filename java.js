@@ -2,7 +2,8 @@ let user_name = prompt("please enter your name ");
 if(user_name ==null ||user_name == undefined ){
     user_name =" ";
 }
-let gender;
+function mygender(){
+    let gender;
 while(true){
     gender=prompt("Please enter your gender");
     if(gender=="male"){
@@ -18,6 +19,8 @@ while(true){
         alert("please enter meal or female ");
     }
   }
+}
+mygender();
 
 let order = prompt("what do you want Donat Coffee or Ice cream or Bakery ",["Bakery"]);
 let ordername= prompt("Enter name your order ",["Ice coffee"]);
